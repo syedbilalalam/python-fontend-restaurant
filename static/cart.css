@@ -1,0 +1,185 @@
+.navbar {
+    position: static;
+}
+
+.cartPage {
+    padding-top: 180px;
+    min-height: 120vh;
+    background-color: transparent;
+    /* background-image: url('testo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1; */
+    padding-bottom:200px;
+}
+
+.cartPage .container {
+    width: 90%;
+    height: fit-content;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+    align-items: stretch;
+    min-width:900px;
+}
+.cartPage .parentContainer{
+    width:100%;
+    overflow-x:auto;
+    padding:0 10px;
+}
+.boxHeading {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+}
+
+.boxHeading h3 {
+    font-size: 20px;
+}
+
+.cartPage .container .leftBox {
+    padding: 0 24px;
+    background-color: #feffe9;
+    flex-grow: 1;
+    padding-bottom: 25px;
+}
+
+.cartPage .container .rightBox {
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.74);
+    color: white;
+}
+
+/* Item row css */
+.itemsRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.itemsRow .itemPrice{
+    font-size:15px;
+    margin: 0 10px;
+}
+
+.itemsRow .product {
+    display: flex;
+    align-items: center;
+}
+
+.itemsRow .product .itemDetails {
+    margin: 0 10px;
+    flex-grow: 0;
+    height: fit-content;
+    max-width: 100px;
+    max-height: 60px;
+    overflow: hidden;
+}
+
+.itemsRow .product .itemDetails p {
+    margin: 3px 0;
+}
+
+.itemsRow .itemIMG {
+    overflow: hidden;
+    height: fit-content;
+    width: fit-content;
+}
+
+.itemsRow .itemIMG:hover img {
+    transform: scale(1.2);
+}
+
+.itemsRow .itemIMG img {
+    height: 100px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.itemsRow .itemRemove span {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+/* item quantity */
+.itemsRow .itemQuantity {
+    display: flex;
+    margin: 0 10px;
+}
+
+.itemsRow .itemQuantity .subtract,
+.itemsRow .itemQuantity .add,
+.itemsRow .itemQuantity .quantity {
+    border: 1px solid black;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+.itemsRow .itemQuantity .add,
+.itemsRow .itemQuantity .subtract {
+    cursor: pointer;
+    user-select: none;
+}
+
+.itemsRow .itemRemove {
+    cursor: pointer;
+}
+
+
+/* Right box */
+.cartPage .rightBox {
+    padding: 20px 31px;
+}
+
+.cartPage .rightBox h4 {
+    font-size: 17px;
+}
+
+.cartPage .rightBox .standardPrice {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.cartPage .rightBox label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.cartPage select,
+.cartPage #refral {
+    padding: 11px 5px;
+    border: 1px solid hsl(0, 0%, 77%);
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 28px;
+
+}
+
+.cartPage .netAmount {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartPage #checkout.bbtn {
+    color: black;
+    background-color: white;
+}
+
+/* Background */
+.backContainer {
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: -2;
+    height: 100vh;
+    width: 100vw;
+    object-fit:cover;
+}
